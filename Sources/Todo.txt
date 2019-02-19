@@ -1,0 +1,53 @@
+//To do :
+Init_Data()
+CorrectLinePosition()
+UpdateLinePosition()
+FlightControlRequest()
+AnswerFlightControl()
+abs()
+DiffTicks(NewTicks,OldTicks)
+push,pop ...;
+
+
+
+ 
+/*********************************************************************
+							HARDWARE
+*********************************************************************/
+
+	Wire the device : Arduino , Encoder , Ir_Sensor , Computer log
+
+	Get Nb Ticks
+
+	Get Line's Color
+
+/*********************************************************************
+							SOFTWARE
+*********************************************************************/
+
+//PULLEY_ENCODER
+
+	Which line direction is UP ?
+
+	UpdateLinePosition 
+
+//IR_SENSOR
+
+	Get Line's Color
+
+	How many ticks it tackes between 2 landmarks
+	
+	How long is the bar
+	
+	Read Landmark
+	
+	CorrectLinePosition
+
+//Flight Control Communication
+	
+	Choose the serial port
+	
+	FlightControlRequest()
+	
+	AnswerFlightControl()
+		
