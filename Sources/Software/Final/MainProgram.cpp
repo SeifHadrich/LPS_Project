@@ -1,4 +1,4 @@
-
+#define LOG
 
 /***
 if line direction is UP then : 
@@ -421,20 +421,25 @@ char TmpMsg[100];
 #####################################################################################################################################
 #####################################################################################################################################
 */
-
+/*
+ * Init_IO_ISR
+ * Initialise input output and set interrups
+ * IN  -> -
+ * OUT <- -
+ */
 Init_IO_ISR()
-	{
-	#define IR_SENSOR_SIG_PIN  	?
-	#define ENCODER_A_PIN  		?
-	#define ENCODER_B_PIN  		?
-	pinMode(IR_SENSOR_SIG_PIN,INPUT_PULLUP);
-	pinMode(ENCODER_A_PIN,INPUT_PULLUP);
-	pinMode(ENCODER_B_PIN,INPUT_PULLUP);
-	//Set ISR_IrSensor interrupt to be triggered as soon as  the IrSensor's signal changes
-	attachInterrupt(digitalPinToInterrupt(IR_SENSOR_SIG_PIN), ISR_IrSensor, CHANGE );
-	//Set ISR_Encoder interrupt to be triggered as soon as ENCODER_A_PIN raises
-	attachInterrupt(digitalPinToInterrupt(ENCODER_A_PIN), ISR_Encoder, RISING  );
-	}
+  {
+  #define IR_SENSOR_SIG_PIN   2
+  #define ENCODER_A_PIN       3
+  #define ENCODER_B_PIN       4
+  pinMode(IR_SENSOR_SIG_PIN,INPUT_PULLUP);
+  pinMode(ENCODER_A_PIN,INPUT_PULLUP);
+  pinMode(ENCODER_B_PIN,INPUT_PULLUP);
+  //Set ISR_IrSensor interrupt to be triggered as soon as  the IrSensor's signal changes
+  attachInterrupt(digitalPinToInterrupt(IR_SENSOR_SIG_PIN), ISR_IrSensor, CHANGE );
+  //Set ISR_Encoder interrupt to be triggered as soon as ENCODER_A_PIN raises
+  attachInterrupt(digitalPinToInterrupt(ENCODER_A_PIN), ISR_Encoder, RISING  );
+  }
 
 /*
 #####################################################################################################################################
@@ -499,7 +504,7 @@ ISR_Encoder ()
 #####################################################################################################################################
 */
 
-#define LOG
+
 
 /*
 Setup
@@ -511,7 +516,7 @@ setup()
 	#ifdef LOG
 	//Set the serial comm at 115200 bauds 
 	/**/Serial1.begin(115200); 
-	/**/sprintf(TmpMsg,"*** Starting Line position prorgamm ***");
+	/**/sprintf(TmpMsg,"*** Starting Line position prorgam ***");
 	/**/Serial1.print(TmpMsg);
 	/**/Landmark.Stack.setPrinter (Serial1);// set the printer of the landmark stack.
 	#endif

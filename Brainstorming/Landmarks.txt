@@ -1,0 +1,39 @@
+/*
+---------------------
+INCREMENTAL LANDMARK 
+LandmarkID=INCREMENTAL
+---------------------	
+WHITE|BLACK|BLACK|WHITE|WHITE|WHITE
+	 0           1          
+   begin                           end                          
+*/
+
+/*
+---------------------
+LANDMARK for 0 m 
+LandmarkID=ABSOLUTE_0
+---------------------
+WHITE|BLACK|BLACK|WHITE|BLACK|WHITE|WHITE|WHITE
+	 0           1     2     3     
+   begin                                       end 
+*/
+
+/*
+---------------------
+LANDMARK for 100 m
+LandmarkID=ABSOLUTE_100	
+---------------------
+WHITE|BLACK|BLACK|WHITE|BLACK|WHITE|BLACK|WHITE|WHITE|WHITE
+	 0           1     2     3     4     5     
+   begin                                                   end 	
+*/
+
+/*
+---------------------
+LANDMARK for 200 m
+LandmarkID=ABSOLUTE_200
+---------------------
+WHITE|BLACK|BLACK|WHITE|BLACK|WHITE|BLACK|WHITE|BLACK|WHITE|WHITE|WHITE
+	 0           1     2     3     4     5     6     7
+   begin                                                               end 	
+*/
