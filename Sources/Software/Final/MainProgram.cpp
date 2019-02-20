@@ -1,4 +1,5 @@
 #define LOG
+#include <StackArray.h>
 
 /***
 if line direction is UP then : 
@@ -67,7 +68,7 @@ if line direction is DOWN then :
 
 
 
-#include <StackArray.h>
+
 
 
 

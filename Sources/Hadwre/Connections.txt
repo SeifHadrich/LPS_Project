@@ -1,0 +1,31 @@
+
+########################################################
+					ENCODER
+########################################################
+
+
+Connect the encoder :
+
+Black 	: 0v
+Red 	: 5v
+Green 	: Arduino D3 +(option connect D3 to a 1 Khom resistance en pull-up 5V)
+white	: Arduino D4 +(option connect D4 to a 1 Khom resistance en pull-up 5V)
+
+
+
+
+########################################################
+						IR_SENSOR
+########################################################
+
+How Ir_Sensor works ?
+
+http://qqtrading.com.my/ir-infrared-line-following-reflective-sensor-module-tcrt5000
+
+
+
+Connect The IR_Sensor :
+Gnd : 0v
+Vcc : 5v
+D0	: D2 Arduino
+A0  : - nc
