@@ -164,7 +164,7 @@ void loop()
 {
   byte ii = 0;
   //max stack memory is 164 * 5 byte
-  for (ii = 0; ii < 200; ii++) {
+  for (ii = 0; ii < 40; ii++) {
     ISR_IrSensor();
   }
   delay(1000);

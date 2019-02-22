@@ -227,8 +227,8 @@ byte CheckNewLandmark(void);
 */	
 /*
  * SaveNewLandmark
- * Read and save a line landmark (it 's look like a barcode)
- * IN  -> Color : Color of the bar (could be black or white)
+ * Read and save a line landmark (it looks like a barcode)
+ * IN  -> Color : Bar color (could be black or white)
  *		  NbTicks : The position of the bar
  * OUT <- -
  */

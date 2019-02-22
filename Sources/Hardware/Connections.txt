@@ -11,7 +11,7 @@ Red 	: 5v
 Green 	: Arduino D3 +(option connect D3 to a 1 Khom resistance en pull-up 5V)
 white	: Arduino D4 +(option connect D4 to a 1 Khom resistance en pull-up 5V)
 
-
+=> JST XH 4 : 
 
 
 ########################################################
@@ -29,3 +29,5 @@ Gnd : 0v
 Vcc : 5v
 D0	: D2 Arduino
 A0  : - nc
+
+=> JST XH 5 : 
